@@ -1,0 +1,107 @@
+/**********************
+ *  Project styles
+ **********************/
+body
+{
+	padding-top:                60px;
+
+	background-color:           #cccccc;
+}
+
+/**
+ *  Twitter Bootstrap Styles
+ */
+textarea.span3
+{
+	width:                      100%;
+}
+.navbar .brand
+{
+	float:                      none;
+
+	font-family:                'Arial', cursive;
+	font-size:                  24px;
+	text-align:                 center;
+	line-height:                3;
+
+	margin-left:                -40px;
+}
+.navbar-fixed-top
+{
+	background-color:           #dddddd;
+	border-color:               #e3e3e3;
+}
+.row
+{
+	padding-top:                20px;
+}
+.btn-info
+{
+	margin-top:                 4px;
+}
+
+/**********************
+ *  Major Task Manager styles
+ **********************/
+/**
+ *  IDs
+ */
+#title
+{
+	margin-bottom:              5px;
+
+	width:                      100%;
+}
+#new_list_button
+{
+	display:                    block;
+
+	width:                      100%;
+
+	font-size:                  60px;
+}
+/**
+ *  Classes
+ */
+.list_head
+{
+	margin:                     -20px -20px 20px -20px;
+	padding:                    5px;
+
+	font-family:                'Arial', cursive;
+	font-size:                  20px;
+	text-align:                 center;
+	line-height:                30px;
+
+	border-top-left-radius:     5px;
+	border-top-right-radius:    5px;
+
+	background:                 #dddddd;
+}
+.card_item
+{
+	margin-bottom:              10px;
+
+	border-bottom:              1px #dddddd dotted;
+}
+.card_box
+{
+	position:                   relative;
+	width:                      auto;
+
+	margin:                     -20px -20px -19px -20px;
+	padding:                    20px;
+
+	overflow-y:                 auto;
+	overflow-x:                 hidden;
+}
+.well
+{
+	background-color:           #eeeeee;
+}
+
+.close,
+.list > .close
+{
+	line-height:                0;
+}

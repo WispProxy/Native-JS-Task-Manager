@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+
+		<title>
+			Simple Task Manager based on Native JS, CSS & HTML
+		</title>
+
+
+		<meta name="viewport"       content="width=device-width, initial-scale=1.0">
+		<meta name="description"    content="Simple Task Manager based on Native JS, CSS & HTML">
+		<meta name="author"         content="WispProxy">
+
+
+		<!-- BEGIN Import Vendors Styles -->
+			<link rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- END Import Vendors Styles -->
+
+		<!-- BEGIN Import Project Styles -->
+			<link rel="stylesheet"  href="project/css/style.css" />
+		<!-- END Import Project Styles -->
+
+	</head>
+
+
+
+	<body>
+
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<!-- /.btn.btn-navbar -->
+
+					<a class="brand" href="index.html">
+						Simple Task Manager
+					</a>
+					<!-- /.brand-->
+
+					<div class="nav-collapse">
+					</div>
+					<!-- /.nav-collapse -->
+
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.navbar-inner -->
+		</div>
+		<!-- /.navbar.navbar-fixed-top -->
+
+
+
+
+		<div class="container">
+
+			<div class="row">
+				<div class="span12">
+
+					<div class="span3">
+
+						<button id="new_list_button" class="btn btn-info" type="button" onclick="toggleDivs('new_list','new_list_button')">
+							+
+						</button>
+						<!-- /#new_list_button-->
+
+						<form id="new_list" class="well" style="display:none" onsubmit="return addList()">
+
+							<a class="close" href="#" onclick="toggleDivs('new_list_button','new_list')">
+								x
+							</a>
+							<!-- /.close -->
+
+							<h2 class="list_head">
+								Create New List
+							</h2>
+							<!-- /.list_head -->
+
+							<input id="title" type="text" name="title" placeholder="Please input New Name for List"/>
+							<!-- /#title-->
+
+							<button class="btn btn-success" type="submit">
+								Add New Name for List
+							</button>
+							<!-- /.btn.btn-success -->
+
+						</form>
+						<!-- /#new_list.well -->
+
+					</div>
+					<!-- /.span3 -->
+
+					<div id="listContainer">
+					</div>
+					<!-- /#listContainer -->
+
+				</div>
+				<!-- /.span12 -->
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+
+
+
+
+		<!-- BEGIN Import Project JavaScript Application -->
+			<script src="project/js/app.js"></script>
+		<!-- END Import Project JavaScript Application -->
+	</body>
+</html>
